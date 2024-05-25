@@ -1,0 +1,56 @@
+.home-hero-container {
+    background: url("/public/Images/home-hero.png");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+}
+
+.home-hero-container h1 {
+    font-size: 4rem;
+    font-family: "Gilroy";
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    width: 70vw;
+    letter-spacing: 0.08rem;
+}
+
+.home-about-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10vh 10vw;
+    align-items: center;
+    gap: 3vh;
+}
+
+.home-about-container h1 {
+    font-size: 2rem;
+    letter-spacing: 0.02rem;
+    font-family: "Gilroy";
+    font-weight: 500;
+}
+
+.home-about-container p {
+    margin: 0 5vw;
+    text-align: justify;
+    font-family: "TT Norms Pro";
+    font-weight: 500;
+    letter-spacing: 0.04rem;
+}
+
+.home-about-container button {
+    font-family: "TT Norms Pro";
+    letter-spacing: 0.04rem;
+    width: max-content;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.home-about-container img {
+    margin-top: 7vh;
+    width: 40vw;
+}
