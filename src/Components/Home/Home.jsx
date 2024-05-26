@@ -1,11 +1,13 @@
 import "./home.css"
-
+import { cards } from "./card.js"
+import Card from "../HomeProductCard/Card"
 export default function Home() {
     return (
         <>
             <section className="home-hero-container">
                 <h1>Revolutionizing Mobility with Intelligent Solutions</h1>
             </section>
+
             <section className="home-about-container">
                 <h1>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -25,6 +27,12 @@ export default function Home() {
                 </p>
                 <button>To know more</button>
                 <img src="/Images/make-in-india.png" alt="" />
+            </section>
+
+            <section className="home-cards">
+                {cards.map((card) => (
+                    <Card cardDetails={card} />
+                ))}
             </section>
         </>
     )

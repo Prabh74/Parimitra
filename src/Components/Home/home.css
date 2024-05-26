@@ -1,3 +1,5 @@
+/* Hero Container */
+
 .home-hero-container {
     background: url("/public/Images/home-hero.png");
     height: 100vh;
@@ -18,6 +20,7 @@
     letter-spacing: 0.08rem;
 }
 
+/* About Container */
 .home-about-container {
     display: flex;
     flex-direction: column;
@@ -53,4 +56,13 @@
 .home-about-container img {
     margin-top: 7vh;
     width: 40vw;
+}
+
+/* Cards Container */
+.home-cards {
+    padding: 5vh 10vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5vw;
+    row-gap: 5vh;
 }

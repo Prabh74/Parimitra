@@ -1,0 +1,50 @@
+.home-product-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 40vh;
+    padding: 3vh 2vw;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-product-card-text {
+    color: white;
+}
+
+.home-product-card-text h1 {
+    font-family: "Gilroy";
+    font-weight: 700;
+    letter-spacing: 0.08rem;
+    font-size: 1.5rem;
+}
+
+.home-product-card-text p {
+    font-family: "TT Norms Pro";
+    font-weight: 500;
+    letter-spacing: 0.04rem;
+}
+
+.home-product-card-cta {
+    width: 30%;
+    text-align: right;
+    color: white;
+}
+
+.home-product-card-cta p {
+    font-family: "Gilroy";
+    font-weight: 700;
+    letter-spacing: 0.03rem;
+    font-size: 1.5rem;
+}
+
+.home-product-card-cta button {
+    background-color: var(--accent-color);
+    font-family: "Gilroy";
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
