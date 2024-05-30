@@ -29,10 +29,14 @@ export default function Home() {
                 <img src="/Images/make-in-india.png" alt="" />
             </section>
 
-            <section className="home-cards">
-                {cards.map((card) => (
-                    <Card cardDetails={card} />
-                ))}
+            <section className="home-cards-container">
+                <h1>Explore our Solutions</h1>
+                <section className="home-cards">
+                    {cards.map((card) => (
+                        <Card cardDetails={card} />
+                    ))}
+                </section>
+                <p>View more &gt;</p>
             </section>
         </>
     )

@@ -1,30 +1,23 @@
 export const cards = [
     {
-        title: "lorem ipsum",
+        title: "TransitEye",
         subheading:
-            "Lorem ipsumLorem ipsum dolor sit amet consectetur. Pellentesque quis phasellus",
-        price: "3999",
+            "Effortlessly track bus boarding and alighting for seamless travel.",
+        price: "TBD",
         img: "/Images/defaultCard.png",
     },
     {
-        title: "lorem ipsum",
+        title: "CrowdEye",
         subheading:
-            "Lorem ipsumLorem ipsum dolor sit amet consectetur. Pellentesque quis phasellus",
-        price: "3999",
+            "This wireless, out-of-the-box device uses advanced algorithms to accurately count people in public spaces.",
+        price: "TBD",
         img: "/Images/defaultCard.png",
     },
     {
-        title: "lorem ipsum",
+        title: "Video Analytics",
         subheading:
-            "Lorem ipsumLorem ipsum dolor sit amet consectetur. Pellentesque quis phasellus",
-        price: "3999",
-        img: "/Images/defaultCard.png",
-    },
-    {
-        title: "lorem ipsum",
-        subheading:
-            "Lorem ipsumLorem ipsum dolor sit amet consectetur. Pellentesque quis phasellus",
-        price: "3999",
+            "Transform traffic videos into actionable insights with accurate vehicle counts by category.",
+        price: "TBD",
         img: "/Images/defaultCard.png",
     },
 ]

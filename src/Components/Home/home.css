@@ -20,6 +20,13 @@
     letter-spacing: 0.08rem;
 }
 
+@media screen and (max-width: 768px) {
+    .home-hero-container h1 {
+        width: unset;
+        font-size: 2.5rem;
+    }
+}
+
 /* About Container */
 .home-about-container {
     display: flex;
@@ -58,11 +65,55 @@
     width: 40vw;
 }
 
+@media screen and (max-width: 768px) {
+    .home-about-container {
+        padding: 10vh 5vw;
+    }
+    .home-about-container h1 {
+        font-size: 1.5rem;
+    }
+    .home-about-container p {
+        text-align: left;
+        margin: 0;
+    }
+    .home-about-container img {
+        width: 80vw;
+        margin-top: 5vh;
+    }
+}
 /* Cards Container */
+
+.home-cards-container {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10vh 0;
+}
+
+.home-cards-container > h1 {
+    font-family: "Gilroy";
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: 0.08rem;
+}
+
+.home-cards-container > p {
+    font-family: "TT Norms Pro";
+    font-size: 1.25rem;
+}
+
 .home-cards {
     padding: 5vh 10vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 5vw;
     row-gap: 5vh;
+}
+
+@media screen and (max-width: 768px) {
+    .home-cards-container > h1 {
+        font-size: 2rem;
+    }
+    .home-cards {
+        grid-template-columns: 1fr;
+    }
 }

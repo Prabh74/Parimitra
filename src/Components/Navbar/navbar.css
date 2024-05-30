@@ -43,3 +43,14 @@
     background-color: var(--accent-color);
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+    .nav-links,
+    .navbar-btn-container {
+        display: none;
+    }
+
+    .navbar-logo {
+        width: 40vw;
+    }
+}
