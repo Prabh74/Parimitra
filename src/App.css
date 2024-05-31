@@ -10,6 +10,14 @@
     --accent-color: #81cb50;
 }
 
+.accent-color {
+    color: var(--accent-color);
+}
+
+a {
+    text-decoration: none;
+}
+
 * {
     margin: 0;
     padding: 0;

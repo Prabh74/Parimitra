@@ -1,5 +1,5 @@
 import "./home.css"
-import { cards } from "./card.js"
+import { cards } from "../../card.js"
 import Card from "../HomeProductCard/Card"
 export default function Home() {
     return (
