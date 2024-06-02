@@ -34,7 +34,9 @@ export default function Navbar() {
                 </div>
 
                 <div className="navbar-btn-container">
-                    <button className="navbar-btn">Contact Us</button>
+                    <Link to="contact">
+                        <button className="navbar-btn">Contact Us</button>
+                    </Link>
                 </div>
 
                 <img

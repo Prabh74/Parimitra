@@ -67,9 +67,6 @@ export default function About() {
                     ))}
                 </div>
             </section>
-            <section className={styles.contactDetails}>
-                <h1>Contact Details</h1>
-            </section>
         </main>
     )
 }

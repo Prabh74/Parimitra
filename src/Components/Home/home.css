@@ -108,6 +108,9 @@
     column-gap: 5vw;
     row-gap: 5vh;
 }
+.home-contact {
+    display: none;
+}
 
 @media screen and (max-width: 768px) {
     .home-cards-container > h1 {
@@ -115,5 +118,8 @@
     }
     .home-cards {
         grid-template-columns: 1fr;
+    }
+    .home-contact {
+        display: block;
     }
 }

@@ -6,15 +6,15 @@ export default function Card({ cardDetails }) {
         <Link to={`/products/${url}`}>
             <section
                 className="home-product-card"
-                style={{ backgroundImage: `url(${img})` }}
+                style={{ background: `url(${img})` }}
             >
+                <div className="home-product-card-overlay"></div>
                 <div className="home-product-card-text">
                     <h1>{title}</h1>
                     <p>{subheading}</p>
                 </div>
                 <div className="home-product-card-cta">
-                    <p>Rs {price}</p>
-                    <button>Qoute</button>
+                    <button>Explore</button>
                 </div>
             </section>
         </Link>

@@ -16,13 +16,17 @@ export default function Product() {
                 <h1>{details?.title}</h1>
                 <p>{details?.subheading}</p>
                 <div>
-                    <button className="product-btn-1">Contact Us</button>
-                    <button className="product-btn-2">Explore More</button>
+                    <a href="#product-content">
+                        <button className="product-btn-2">Explore More</button>
+                    </a>
                 </div>
             </section>
 
             <img src={details?.img} alt="" />
-            <section className="product-page-second-section">
+            <section
+                id="product-content"
+                className="product-page-second-section"
+            >
                 <h1
                     dangerouslySetInnerHTML={{ __html: details?.data?.head }}
                 ></h1>

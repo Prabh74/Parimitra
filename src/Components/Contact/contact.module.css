@@ -1,0 +1,10 @@
+.contactDetails {
+    padding: 10vh 5vw;
+}
+.contactDetails h1 {
+    font-family: "Gilroy";
+    font-weight: 700;
+    font-size: 3.5rem;
+    letter-spacing: 0.04rem;
+    text-align: center;
+}
