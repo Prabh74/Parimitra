@@ -44,6 +44,14 @@
     cursor: pointer;
 }
 
+.navbar-mobile-menu-icon {
+    display: none;
+}
+
+.navbar-open {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     .nav-links,
     .navbar-btn-container {
@@ -52,5 +60,45 @@
 
     .navbar-logo {
         width: 40vw;
+    }
+
+    .navbar-mobile-menu-icon {
+        display: unset;
+        height: 3vh;
+    }
+
+    .navbar-open {
+        position: fixed;
+        z-index: 999;
+        background: linear-gradient(black, rgb(0, 0, 0, 0.5));
+        backdrop-filter: blur(10px);
+        top: -50vh;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 2vh 5vw;
+        transition: 0.5s ease-in-out;
+    }
+
+    .navbar-open > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 3vh;
+    }
+
+    .navbar-open > .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        padding: 4vh 0;
+        align-items: start;
+        margin-bottom: 0;
+    }
+
+    .navbar-menu-close {
+        height: 3vh;
+        width: 3vh;
     }
 }
