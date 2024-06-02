@@ -2,7 +2,6 @@ import "./card.css"
 import { Link } from "react-router-dom"
 export default function Card({ cardDetails }) {
     const { title, subheading, price, img, url } = cardDetails
-    console.log(img)
     return (
         <Link to={`/products/${url}`}>
             <section

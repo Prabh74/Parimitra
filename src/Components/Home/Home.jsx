@@ -1,7 +1,11 @@
 import "./home.css"
 import { cards } from "../../card.js"
 import Card from "../HomeProductCard/Card"
+import { useEffect } from "react"
 export default function Home() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <>
             <section className="home-hero-container">
@@ -29,14 +33,14 @@ export default function Home() {
                 <img src="/Images/make-in-india.png" alt="" />
             </section>
 
-            <section className="home-cards-container">
+            <section className="home-cards-container" id="product">
                 <h1>Explore our Solutions</h1>
                 <section className="home-cards">
                     {cards.map((card) => (
                         <Card cardDetails={card} />
                     ))}
                 </section>
-                <p>View more &gt;</p>
+                {/* <p>View more &gt;</p> */}
             </section>
         </>
     )

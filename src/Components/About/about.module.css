@@ -1,0 +1,72 @@
+.aboutHero {
+    background: url("/public/Images/about-hero.png");
+    padding: 10vh 10vw;
+    display: grid;
+    place-items: center;
+    font-family: "Gilroy";
+    font-weight: 700;
+    letter-spacing: 0.06rem;
+    font-size: 3.5rem;
+    height: 40vh;
+    color: white;
+}
+
+.aboutCompanyContainer {
+    padding: 10vh 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.aboutCompany {
+    display: flex;
+    align-items: center;
+}
+
+.aboutCompany > div {
+    flex: 1;
+}
+
+.aboutCompany h1 {
+    font-family: "Gilroy";
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: 0.04rem;
+}
+
+.aboutCompany p {
+    font-family: "TT Norms Pro";
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.aboutTeam {
+    background-color: #f0f0f0;
+    padding: 5vh 5vw;
+}
+
+.aboutTeam > h1 {
+    font-family: "Gilroy";
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: 0.04rem;
+}
+
+.teamcards {
+    display: flex;
+}
+.contactDetails {
+    padding: 5vh 5vw;
+}
+.contactDetails h1 {
+    font-family: "Gilroy";
+    font-weight: 700;
+    font-size: 3.5rem;
+    letter-spacing: 0.04rem;
+    text-align: center;
+}

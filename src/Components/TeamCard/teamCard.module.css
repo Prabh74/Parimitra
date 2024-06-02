@@ -1,0 +1,34 @@
+.teamcard > h1 {
+    font-family: "Gilroy";
+    font-size: 2rem;
+    letter-spacing: 0.04rem;
+}
+.teamcard a {
+    font-family: "Gilroy";
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--accent-color);
+}
+.designation {
+    font-family: "Gilroy";
+    font-weight: 600;
+    font-size: 1.25rem;
+    letter-spacing: 0.04rem;
+}
+.creds {
+    font-size: 0.75rem;
+    font-family: "Gilroy";
+    font-weight: 600;
+    letter-spacing: 0.04rem;
+    width: 60%;
+    color: #666363;
+}
+.email {
+    font-family: "Gilroy";
+    font-weight: 600;
+    letter-spacing: 0.04rem;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
