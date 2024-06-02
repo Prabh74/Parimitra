@@ -31,9 +31,6 @@ export default function Navbar() {
                     <a href="/#product" className="nav-link">
                         Products
                     </a>
-                    <Link to="/solutions" className="nav-link">
-                        Solutions
-                    </Link>
                 </div>
 
                 <div className="navbar-btn-container">
@@ -76,13 +73,6 @@ export default function Navbar() {
                     >
                         Products
                     </a>
-                    <Link
-                        to="/solutions"
-                        className="nav-link"
-                        onClick={handleMenu}
-                    >
-                        Solutions
-                    </Link>
                 </div>
             </section>
             <Outlet />

@@ -14,7 +14,6 @@ function App() {
                 <Route path="about" element={<About />} />
                 <Route path="products" element={<About />} />
                 <Route path="products/:name" element={<Product />} />
-                <Route path="solutions" element={<About />} />
             </Route>
 
             <Route path="*" element={<NotFound />} />
