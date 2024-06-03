@@ -75,6 +75,9 @@ export default function Navbar() {
                     >
                         Products
                     </a>
+                    <Link to="/contact" className="nav-link">
+                        Contact Us
+                    </Link>
                 </div>
             </section>
             <Outlet />
