@@ -1,5 +1,6 @@
 .aboutHero {
-    background: url("/public/Images/about-hero.png");
+    background: url("/public/Images/about-hero.png") no-repeat center;
+    background-size: cover;
     padding: 10vh 10vw;
     display: grid;
     place-items: center;
@@ -62,4 +63,25 @@
 .teamcards {
     display: flex;
     gap: 5vw;
+}
+
+@media screen and (max-width: 768px) {
+    .aboutHero {
+        height: 60vh;
+        font-size: 2.5rem;
+    }
+    .aboutCompany > div {
+        flex: unset;
+    }
+
+    .aboutTeam > h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .teamcards {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 10vh;
+    }
 }
