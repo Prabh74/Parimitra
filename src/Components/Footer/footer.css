@@ -1,0 +1,65 @@
+.footer {
+    background-color: black;
+    padding: 10vh 10vw;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10vw;
+    font-family: "TT Norms Pro";
+    font-weight: 500;
+    letter-spacing: 0.03rem;
+}
+
+.footer a {
+    text-decoration: underline;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.footer a:hover {
+    color: var(--accent-color);
+}
+
+.footer-link {
+    text-decoration: none !important;
+}
+
+.footer hr {
+    border: none;
+    border-top: 1px solid var(--accent-color);
+}
+
+.footer-child:nth-child(1) {
+    align-items: baseline;
+}
+
+.footer-child {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    text-align: left;
+}
+.footer-child > img {
+    height: 5vh;
+}
+.footer-text {
+    font-weight: 400;
+}
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-contact {
+    display: flex;
+    gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        gap: 10vh;
+    }
+}

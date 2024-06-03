@@ -6,20 +6,24 @@ import Navbar from "./Components/Navbar/Navbar"
 import NotFound from "./NotFound"
 import Product from "./Components/ProductPage/Product.jsx"
 import Contact from "./Components/Contact/Contact.jsx"
+import Footer from "./Components/Footer/Footer.jsx"
 
 function App() {
     return (
-        <Routes>
-            <Route path="/" element={<Navbar />}>
-                <Route path="" element={<Home />} />
-                <Route path="about" element={<About />} />
-                <Route path="products" element={<About />} />
-                <Route path="products/:name" element={<Product />} />
-                <Route path="contact" element={<Contact />} />
-            </Route>
+        <>
+            <Routes>
+                <Route path="/" element={<Navbar />}>
+                    <Route path="" element={<Home />} />
+                    <Route path="about" element={<About />} />
+                    <Route path="products" element={<About />} />
+                    <Route path="products/:name" element={<Product />} />
+                    <Route path="contact" element={<Contact />} />
+                </Route>
 
-            <Route path="*" element={<NotFound />} />
-        </Routes>
+                <Route path="*" element={<NotFound />} />
+            </Routes>
+            <Footer />
+        </>
     )
 }
 
