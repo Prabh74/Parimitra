@@ -1,5 +1,21 @@
 .contactDetails {
-    padding: 10vh 5vw;
+    padding: 20vh 5vw;
+    background: url("/public/Images/contact.png") no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+    overflow-y: scroll;
+    color: white;
+    scrollbar-width: 0;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.contactDetails::-webkit-scrollbar {
+    display: none;
 }
 .contactDetails h1 {
     font-family: "Gilroy";
@@ -7,4 +23,102 @@
     font-size: 3.5rem;
     letter-spacing: 0.04rem;
     text-align: center;
+}
+
+.contactDetails p {
+    color: #f0f0f0;
+    font-family: "TT Norms Pro";
+    width: 60vw;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.form {
+    width: 60vw;
+    font-family: "TT Norms Pro";
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.formfield {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #a4a1a1;
+    background-color: transparent;
+    border-radius: 5px;
+    color: white;
+    transition: 0.3s;
+    width: calc(30vw - 10px);
+}
+
+.form input:focus-visible,
+.form textarea:focus-visible {
+    border: 1px solid #fff;
+    box-shadow: none;
+    outline: none;
+}
+
+.form input::placeholder {
+    color: #a4a1a1;
+}
+
+.form button {
+    width: max-content;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--accent-color);
+    font-size: 1rem;
+}
+
+.form textarea {
+    width: 60vw;
+    resize: vertical;
+    font-family: "TT Norms Pro";
+    height: 10vh;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #a4a1a1;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.form input,
+.form textarea {
+    backdrop-filter: blur(10px);
+}
+
+@media screen and (max-width: 768px) {
+    .contactDetails {
+        padding: 10vh 5vw;
+    }
+    .contactDetails h1 {
+        font-size: 2.5rem;
+    }
+    .contactDetails p {
+        width: 90vw;
+        font-size: 1rem;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .form input,
+    .form textarea {
+        width: 90vw;
+    }
 }
