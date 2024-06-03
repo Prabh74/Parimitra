@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom"
 import { cards } from "../../card"
 import { useEffect } from "react"
+import { Carousel } from "react-responsive-carousel"
+import "react-responsive-carousel/lib/styles/carousel.min.css"
 import "./product.css"
 
 export default function Product() {
@@ -13,16 +15,33 @@ export default function Product() {
     return (
         <main className="product-page">
             <section className="product-page-first-section">
-                <h1>{details?.title}</h1>
-                <p>{details?.subheading}</p>
                 <div>
-                    <a href="#product-content">
-                        <button className="product-btn-2">Explore More</button>
-                    </a>
+                    <h1>{details?.title}</h1>
+                    <p>{details?.subheading}</p>
+                    <div>
+                        <a href="#product-content">
+                            <button className="product-btn-2">
+                                Explore More
+                            </button>
+                        </a>
+                    </div>
                 </div>
+                <Carousel
+                    showArrows={true}
+                    autoPlay={true}
+                    showThumbs={false}
+                    width={window.innerWidth > 768 ? "50vw" : "90vw"}
+                    infiniteLoop={true}
+                    interval={3000}
+                >
+                    {details?.img.map((i) => (
+                        <div>
+                            <img src={i} alt="" />
+                        </div>
+                    ))}
+                </Carousel>
             </section>
 
-            <img src={details?.img} alt="" />
             <section
                 id="product-content"
                 className="product-page-second-section"

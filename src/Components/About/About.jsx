@@ -17,17 +17,15 @@ export default function About() {
                     <div>
                         <h1>Who we are</h1>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur. Pellentesque
-                            quis phasellus massa facilisis odio.Lorem ipsum
-                            dolor sit amet consectetur. Pellentesque quis
-                            phasellus massa facilisis odio.Lorem ipsum dolor sit
-                            amet consectetur. Pellentesque quis phasellus massa
-                            facilisis Lorem ipsum dolor sit amet consectetur.
-                            Pellentesque quis phasellus massa facilisis
-                            odio.Lorem ipsum dolor sit amet consectetur.
-                            Pellentesque quis phasellus massa facilisis
-                            odio.Lorem ipsum dolor sit amet consectetur.
-                            Pellentesque quis phasellus massa facilisis{" "}
+                            PARIMITRA, a pioneering start-up from IIT Roorkee,
+                            focuses on creating user-friendly and innovative
+                            transportation solutions. Combining "Parivahan"
+                            (transportation) and "Mitra" (friend), we specialize
+                            in advanced mobility solutions leveraging edge
+                            computing, AI, IoT, and cloud technologies. Our
+                            intelligent transportation systems include adaptive
+                            traffic control and crowd management, ensuring
+                            efficiency, safety, and comfort.
                         </p>
                     </div>
                     <div></div>

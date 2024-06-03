@@ -59,4 +59,5 @@
 
 .teamcards {
     display: flex;
+    gap: 5vw;
 }

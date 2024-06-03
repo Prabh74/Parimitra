@@ -5,11 +5,11 @@
     height: 40vh;
     padding: 3vh 2vw;
     border-radius: 10px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
     background-size: cover;
     overflow: hidden;
     position: relative;
-    background-size: cover;
+    background-size: cover !important;
 }
 
 .home-product-card-text {

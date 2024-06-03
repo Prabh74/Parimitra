@@ -1,3 +1,11 @@
+.teamcard {
+    width: 20vw;
+}
+
+.teamcard img {
+    width: 100%;
+}
+
 .teamcard > h1 {
     font-family: "Gilroy";
     font-size: 1.5rem;
@@ -27,6 +35,7 @@
     font-family: "Gilroy";
     font-weight: 600;
     letter-spacing: 0.04rem;
+    margin-top: 10px;
 }
 .flex {
     display: flex;
