@@ -32,7 +32,9 @@ export default function Home() {
                     developed in India for India, driving local innovation and
                     supporting the national economy.
                 </p>
-                {/* <button>To know more</button> */}
+                <Link to="/about">
+                    <button>To know more &gt;</button>
+                </Link>
                 <img src="/Images/make-in-india.png" alt="" />
             </section>
 

@@ -40,7 +40,7 @@
     font-size: 2rem;
     letter-spacing: 0.02rem;
     font-family: "Gilroy";
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .home-about-container p {
@@ -58,6 +58,10 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+}
+
+.home-about-container button:hover {
+    color: var(--accent-color);
 }
 
 .home-about-container img {
