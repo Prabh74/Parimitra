@@ -1,6 +1,12 @@
+import { useRef } from "react"
 import "./footer.css"
 import { Link } from "react-router-dom"
 export default function Footer() {
+    const elem = useRef()
+    const removal = () => {
+        elem.current.classList.remove("footer-link-clicked")
+    }
+
     return (
         <section className="footer">
             <div className="footer-child">
@@ -15,13 +21,32 @@ export default function Footer() {
             </div>
             <div className="footer-child">
                 <div className="footer-links">
-                    <Link to="about" className="footer-link">
+                    <Link to="about" className="footer-link" onClick={removal}>
                         About
                     </Link>
-                    <a href="/#product" className="footer-link">
-                        Products
-                    </a>
-                    <Link to="contact" className="footer-link">
+                    <p
+                        className="footer-link"
+                        onClick={() => {
+                            elem.current.classList.toggle("footer-link-clicked")
+                        }}
+                    >
+                        <span>Products</span>
+                        <div className="footer-link-expand" ref={elem}>
+                            <Link to="/products/video-analytics">
+                                Video Analytics using ITD
+                            </Link>
+                            <Link to="/products/transiteye">TransitEye</Link>
+                            <Link to="/products/crowdeye">CrowdEye</Link>
+                        </div>
+                    </p>
+                    <Link to="team" className="footer-link" onClick={removal}>
+                        Team
+                    </Link>
+                    <Link
+                        to="contact"
+                        className="footer-link"
+                        onClick={removal}
+                    >
                         Contact Us
                     </Link>
                 </div>
