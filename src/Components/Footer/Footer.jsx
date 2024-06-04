@@ -32,11 +32,11 @@ export default function Footer() {
                     >
                         <span>Products</span>
                         <div className="footer-link-expand" ref={elem}>
-                            <Link to="/products/video-analytics">
+                            <a href="/products/video-analytics">
                                 Video Analytics using ITD
-                            </Link>
-                            <Link to="/products/transiteye">TransitEye</Link>
-                            <Link to="/products/crowdeye">CrowdEye</Link>
+                            </a>
+                            <a href="/products/transiteye">TransitEye</a>
+                            <a href="/products/crowdeye">CrowdEye</a>
                         </div>
                     </p>
                     <Link to="team" className="footer-link" onClick={removal}>
