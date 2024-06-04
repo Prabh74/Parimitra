@@ -1,5 +1,3 @@
-import TeamCard from "../TeamCard/TeamCard"
-import { team } from "./team"
 import styles from "./about.module.css"
 import { useEffect } from "react"
 
@@ -56,14 +54,6 @@ export default function About() {
                     </div>
                     <div></div>
                 </section>
-            </section>
-            <section className={styles.aboutTeam}>
-                <h1>Our Team</h1>
-                <div className={styles.teamcards}>
-                    {team.map((member) => (
-                        <TeamCard {...member} />
-                    ))}
-                </div>
             </section>
         </main>
     )

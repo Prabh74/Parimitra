@@ -31,6 +31,9 @@ export default function Navbar() {
                     <a href="/#product" className="nav-link">
                         Products
                     </a>
+                    <Link to="/team" className="nav-link">
+                        Team
+                    </Link>
                 </div>
 
                 <div className="navbar-btn-container">
@@ -75,7 +78,14 @@ export default function Navbar() {
                     >
                         Products
                     </a>
-                    <Link to="/contact" className="nav-link">
+                    <Link to="/team" className="nav-link" onClick={handleMenu}>
+                        Team
+                    </Link>
+                    <Link
+                        to="/contact"
+                        onClick={handleMenu}
+                        className="nav-link"
+                    >
                         Contact Us
                     </Link>
                 </div>

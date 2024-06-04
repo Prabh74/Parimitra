@@ -1,5 +1,6 @@
 .teamcard {
     width: 20vw;
+    color: white;
 }
 
 .teamcard img {
@@ -15,31 +16,31 @@
     font-family: "Gilroy";
     font-weight: 600;
     font-size: 1.25rem;
-    color: var(--accent-color);
+    color: white;
+    text-decoration: underline;
 }
 .designation {
     font-family: "Gilroy";
     font-weight: 600;
     font-size: 1.25rem;
     letter-spacing: 0.04rem;
-}
-.creds {
-    font-size: 0.75rem;
-    font-family: "Gilroy";
-    font-weight: 600;
-    letter-spacing: 0.04rem;
-    width: 60%;
-    color: #666363;
+    color: var(--accent-color);
+    margin-bottom: 10px;
 }
 .email {
     font-family: "Gilroy";
     font-weight: 600;
     letter-spacing: 0.04rem;
-    margin-top: 10px;
-    cursor: pointer;
 }
 
-.email:hover {
+.email a {
+    transition: 0.3s;
+    text-decoration: none;
+    word-wrap: break-word;
+    font-size: 1rem;
+}
+
+.email a:hover {
     color: var(--accent-color);
 }
 

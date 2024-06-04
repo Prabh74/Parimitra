@@ -17,7 +17,7 @@ export default function TeamCard({
                 Linkedin
             </a>
             <p className={styles.email}>
-                Email -<br /> {email}
+                Email -<br /> <a href={`mailto:${email}`}>{email}</a>
             </p>
         </div>
     )

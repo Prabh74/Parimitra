@@ -1,6 +1,6 @@
 import { useState } from "react"
 import styles from "./contact.module.css"
-import { init, send } from "@emailjs/browser"
+import { send } from "@emailjs/browser"
 export default function Contact() {
     const [formInput, setFormInput] = useState({
         name: "",
@@ -19,32 +19,34 @@ export default function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        init({
-            publicKey: "9THNFbfru8nqk8iho",
-            blockHeadless: true,
-            limitRate: {
-                id: "app",
-                // Allow 1 request per 10s
-                throttle: 10000,
-            },
-        })
-        send("service_zez6468", "template_gjwc9ov", {
-            from_name: formInput.name,
-            email: formInput.email,
-            phone: formInput.phone,
-            subject: formInput.subject,
-            message: formInput.message,
-        }).then(
-            (res) => {
-                alert("Email Sent")
-                console.log(res)
-                window.location.reload()
-            },
-            (err) => {
-                alert("Something Went Wrong. Please try again later.")
-                console.log(err)
-            }
-        )
+        const name = formInput.name.trim()
+        const email = formInput.email.trim()
+        const subject = formInput.subject.trim()
+        const message = formInput.message.trim()
+        if (name === "" || email === "" || subject === "" || message === "") {
+            if (name === "") alert("Name is a necessary field")
+            else if (email === "") alert("Email is a necessary field")
+            else if (subject === "") alert("Subject is a necessary field")
+            else if (message === "") alert("Message is a necessary field")
+        } else {
+            send("service_vlvo6ni", "template_fo0s97s", {
+                from_name: name,
+                email: email,
+                phone: formInput.phone,
+                subject: `Email from hiring section:  ${subject}`,
+                message: message,
+            }).then(
+                (res) => {
+                    alert("Email Sent")
+                    console.log(res)
+                    window.location.reload()
+                },
+                (err) => {
+                    alert("Something Went Wrong. Please try again later.")
+                    console.log(err)
+                }
+            )
+        }
     }
     return (
         <section className={styles.contactDetails}>
