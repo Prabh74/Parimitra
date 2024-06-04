@@ -32,16 +32,12 @@ export default function Footer() {
                         <a href="mailto:support@parimitra.in">
                             support@parimitra.in
                         </a>{" "}
-                        &nbsp;&nbsp;
-                        <a href="mailto:parimitra.bharat@gmail.com">
-                            parimitra.bharat@gmail.com
-                        </a>
                     </p>
                 </div>
-                <div className="footer-contact">
+                {/* <div className="footer-contact">
                     <img src="/Images/place.svg" alt="" />
                     <p>A301 canal view Apartments, IIT Roorkee-247667</p>
-                </div>
+                </div> */}
             </div>
         </section>
     )

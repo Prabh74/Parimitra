@@ -16,7 +16,9 @@ export default function TeamCard({
             <a href={linkedin} target="__blank">
                 Linkedin
             </a>
-            <p className={styles.email}>Email - {email}</p>
+            <p className={styles.email}>
+                Email -<br /> {email}
+            </p>
         </div>
     )
 }

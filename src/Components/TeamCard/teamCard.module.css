@@ -36,7 +36,13 @@
     font-weight: 600;
     letter-spacing: 0.04rem;
     margin-top: 10px;
+    cursor: pointer;
 }
+
+.email:hover {
+    color: var(--accent-color);
+}
+
 .flex {
     display: flex;
     justify-content: space-between;
