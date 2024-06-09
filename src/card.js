@@ -5,7 +5,7 @@ export const cards = [
         subheading:
             "Effortlessly track bus boarding and alighting for seamless travel.",
         price: "TBD",
-        img: ["/Images/defaultCard.png"],
+        img: ["/Images/Products/transiteye1.png"],
         data: {
             head: "Our state-of-the-art <span class='accent-color'>passenger counting system</span> meticulously tracks the boarding and alighting of passengers on buses, ensuring a seamless and efficient travel experience. ",
             para: "Designed to integrate flawlessly with existing transit systems, it provides vital data to both transit providers and passengers, facilitating smoother and more reliable journeys. The system adeptly handles simultaneous entries and exits through multiple doors, maintaining an accurate count of passengers at all times. Tailored specifically for Indian scenarios, it leverages data collected from local setups to ensure precision and relevance. A key feature of our system is the calculation of the total number of people inside the bus, delivering this information in real-time to authorities and stakeholders. This ensures optimized bus operations and enhanced passenger safety. The system transmits only the necessary count data in real-time, maintaining a balance between efficiency and privacy. Embrace a new era of intelligent transit solutions with our advanced passenger counting system, designed to revolutionize public transportation in India and beyond.",
@@ -17,7 +17,7 @@ export const cards = [
         subheading:
             "This wireless, out-of-the-box device uses advanced algorithms to accurately count people in public spaces.",
         price: "TBD",
-        img: ["/Images/defaultCard.png"],
+        img: ["/Images/Products/crowdeye1.png"],
         data: {
             head: "Introducing our cutting-edge <span class = 'accent-color'>Crowd Alert and Management System </span>, an essential tool for maintaining safety and efficiency in public spaces",
             para: "This completely wireless, out-of-the-box device leverages state-of-the-art algorithms to accurately detect and count the number of individuals entering and exiting an enclosed area. When a certain crowd threshold is crossed, the system instantly alerts authorities, ensuring timely intervention to prevent overcrowding. Designed for seamless integration, this plug-and-play device is remarkably easy to install and use. It provides real-time data and alerts not only to authorities but also to the public, fostering greater awareness and enabling proactive crowd management. By efficiently monitoring and managing crowd sizes, it helps to prevent potential disasters like stampedes, ensuring a safer environment for everyone. <br />Our system's advanced capabilities make it an indispensable asset for venues of all sizes, from stadiums and concert halls to shopping malls and temples. With this innovative technology, you can ensure the safety and well-being of your visitors, while also enhancing the overall efficiency of your operations. Embrace the future of crowd management with our state-of-the-art solution and transform the way you manage public safety.",
