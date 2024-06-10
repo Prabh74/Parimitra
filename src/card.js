@@ -30,8 +30,8 @@ export const cards = [
             "Transform traffic videos into actionable insights with accurate vehicle counts by category.",
         price: "TBD",
         img: [
-            "/Images/Products/itd1.png",
             "/Images/Products/itd2.png",
+            "/Images/Products/itd1.png",
             "/Images/Products/itd3.png",
             "/Images/Products/itd4.png",
             "/Images/Products/itd5.png",
