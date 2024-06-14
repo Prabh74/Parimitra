@@ -24,6 +24,12 @@ export default function Product() {
                                 Explore More
                             </button>
                         </a>
+                        {name === "video-analytics" &&
+                            <a href={`/Assets/${name}.pdf`} download target="__blank">
+                                <button className="product-btn-1">
+                                    Product Flyer
+                                </button>
+                            </a>}
                     </div>
                 </div>
                 <Carousel
