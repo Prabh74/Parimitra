@@ -25,7 +25,7 @@ export default function Product() {
                             </button>
                         </a>
                         {name === "video-analytics" &&
-                            <a href={`/Assets/${name}.pdf`} download target="__blank">
+                            <a href={`/Assets/${name}.pdf`} filename="Indian Traffic Dataset" download target="__blank">
                                 <button className="product-btn-1">
                                     Product Flyer
                                 </button>
