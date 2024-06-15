@@ -1,3 +1,9 @@
+.product-page {
+    background-color: var(--background-color);
+    transition: 0.3s;
+    color: var(--primary-color);
+}
+
 .product-page-first-section {
     padding: 20vh 10vw 10vh;
     display: flex;

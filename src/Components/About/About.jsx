@@ -1,16 +1,18 @@
+import { ThemeContext } from "../../ThemeStore"
 import styles from "./about.module.css"
-import { useEffect } from "react"
+import { useContext, useEffect } from "react"
 
 export default function About() {
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
+    const { isDark } = useContext(ThemeContext)
     return (
         <main className={styles.aboutContainer}>
             <section className={styles.aboutHero}>
                 <h1>Get to Know Us</h1>
             </section>
-            <section className={styles.aboutCompanyContainer}>
+            <section className={`${styles.aboutCompanyContainer} ${isDark && "dark-theme"}`}>
                 <section className={styles.aboutCompany}>
                     <div>
                         <h1>Who we are</h1>

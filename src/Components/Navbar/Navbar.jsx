@@ -1,9 +1,13 @@
 import { Link, Outlet } from "react-router-dom"
 import "./navbar.css"
-import { useRef } from "react"
+import { useContext, useRef } from "react"
+import { ThemeContext } from "../../ThemeStore"
 
 export default function Navbar() {
     const nav = useRef()
+
+    const { isDark, setIsDark } = useContext(ThemeContext)
+
     const handleMenu = () => {
         console.log(nav.current)
         nav.current.style.top === "-50vh"
@@ -36,18 +40,27 @@ export default function Navbar() {
                     </Link>
                 </div>
 
-                <div className="navbar-btn-container">
-                    <Link to="contact">
-                        <button className="navbar-btn">Contact Us</button>
-                    </Link>
-                </div>
+                <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
+                    <div className="navbar-btn-container">
+                        <Link to="contact">
+                            <button className="navbar-btn">Contact Us</button>
+                        </Link>
+                    </div>
 
-                <img
-                    className="navbar-mobile-menu-icon"
-                    src="/Images/menu.svg"
-                    alt=""
-                    onClick={handleMenu}
-                />
+                    <div className="navbar-theme-mode" onClick={() => { setIsDark(prevValue => !prevValue) }}>
+                        <div className={`navbar-theme-icons ${isDark && "theme-transition"}`}>
+                            <img className="navbar-theme-icon" alt="" src="/Images/sun.svg" />
+                            <img className="navbar-theme-icon" alt="" src="/Images/moon.svg" />
+                        </div>
+                    </div>
+
+                    <img
+                        className="navbar-mobile-menu-icon"
+                        src="/Images/menu.svg"
+                        alt=""
+                        onClick={handleMenu}
+                    />
+                </div>
             </nav>
 
             <section className="navbar-open" ref={nav} style={{ top: "-50vh" }}>

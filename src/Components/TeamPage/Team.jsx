@@ -1,9 +1,11 @@
 import TeamCard from "../TeamCard/TeamCard"
 import styles from "./teampage.module.css"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useContext } from "react"
 import { send } from "@emailjs/browser"
+import { ThemeContext } from "../../ThemeStore"
 
 export default function Team() {
+    const { isDark } = useContext(ThemeContext)
     const [formInput, setFormInput] = useState({
         name: "",
         email: "",
@@ -81,7 +83,7 @@ export default function Team() {
                     ))}
                 </div>
             </section>
-            <section className={styles.careerForm}>
+            <section className={`${styles.careerForm} ${isDark && "dark-theme"}`}>
                 <h1>Work Where You Thrive</h1>
                 <p>
                     We're a company in constant motion, pushing boundaries and

@@ -8,10 +8,14 @@ import Product from "./Components/ProductPage/Product.jsx"
 import Contact from "./Components/Contact/Contact.jsx"
 import Footer from "./Components/Footer/Footer.jsx"
 import Team from "./Components/TeamPage/Team.jsx"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { init } from "@emailjs/browser"
+import { ThemeContext } from "./ThemeStore.jsx"
+import { getThemeLocalStorage, setThemeLocalStorage } from "./localstorage.js"
 
 function App() {
+    const [isDark, setIsDark] = useState(false)
+
     useEffect(() => {
         init({
             publicKey: "xkoo3S1zLAdldrj_f",
@@ -22,9 +26,16 @@ function App() {
                 throttle: 10000,
             },
         })
+
+        let localValue = getThemeLocalStorage()
+        localValue ? setIsDark(localValue) : setIsDark(false)
     }, [])
+
+    useEffect(() => {
+        setThemeLocalStorage(isDark)
+    }, [isDark])
     return (
-        <>
+        <ThemeContext.Provider value={{ isDark, setIsDark }}>
             <Routes>
                 <Route path="/" element={<Navbar />}>
                     <Route path="" element={<Home />} />
@@ -38,7 +49,7 @@ function App() {
                 <Route path="*" element={<NotFound />} />
             </Routes>
             <Footer />
-        </>
+        </ThemeContext.Provider>
     )
 }
 

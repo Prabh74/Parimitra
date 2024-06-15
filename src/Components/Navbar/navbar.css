@@ -51,6 +51,29 @@
     display: none;
 }
 
+.navbar-theme-mode {
+    overflow: hidden;
+    height: 30px;
+    cursor: pointer;
+}
+
+.navbar-theme-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transform: unset;
+    transition: 0.5s ease-in-out;
+}
+
+.navbar-theme-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.theme-transition {
+    transform: translateY(-40px);
+}
+
 @media screen and (max-width: 768px) {
     .nav-links,
     .navbar-btn-container {
@@ -99,5 +122,28 @@
     .navbar-menu-close {
         height: 3vh;
         width: 3vh;
+    }
+
+    .navbar-theme-mode {
+        overflow: hidden;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    .navbar-theme-icons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        transform: unset;
+        transition: 0.5s ease-in-out;
+    }
+
+    .navbar-theme-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .theme-transition {
+        transform: translateY(-35px);
     }
 }

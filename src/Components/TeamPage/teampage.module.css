@@ -37,7 +37,9 @@
 }
 
 .careerForm {
-    background-color: #fff;
+    background-color: var(--background-color);
+    transition: 0.3s;
+    color: var(--primary-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,6 +68,11 @@
     align-items: center;
 }
 
+.form label {
+    color: var(--primary-color);
+    transition: 0.3s ease-in-out;
+}
+
 .flex {
     display: flex;
     justify-content: space-between;
@@ -84,14 +91,14 @@
     border: 1px solid #a4a1a1;
     background-color: transparent;
     border-radius: 5px;
-    color: black;
+    color: var(--primary-color);
     transition: 0.3s;
     width: calc(30vw - 10px);
 }
 
 .form input:focus-visible,
 .form textarea:focus-visible {
-    border: 1px solid #000;
+    border: 1px solid var(--primary-color);
     box-shadow: none;
     outline: none;
 }
@@ -115,7 +122,7 @@
     font-family: "TT Norms Pro";
     height: 10vh;
     background-color: transparent;
-    color: black;
+    color: var(--primary-color);
     border: 1px solid #a4a1a1;
     border-radius: 5px;
     padding: 10px;

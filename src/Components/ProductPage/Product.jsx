@@ -1,19 +1,22 @@
 import { useParams } from "react-router-dom"
 import { cards } from "../../card"
-import { useEffect } from "react"
+import { useContext, useEffect } from "react"
 import { Carousel } from "react-responsive-carousel"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import "./product.css"
+import { ThemeContext } from "../../ThemeStore"
 
 export default function Product() {
     const { name } = useParams()
+    const { isDark } = useContext(ThemeContext)
+
     const details = cards.filter((e) => e.url === name)[0]
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
 
     return (
-        <main className="product-page">
+        <main className={`product-page ${isDark && "dark-theme"}`}>
             <section className="product-page-first-section">
                 <div>
                     <h1>{details?.title}</h1>
